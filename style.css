@@ -1,0 +1,175 @@
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 130vh;
+}
+
+/* Background and welcome text */
+.background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: URL("https://gfx.nrk.no/R26wEZK2dEdeJD-NW8uNXQkRa3SnQjsUA3GJcefiJwDw.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+.background h1 {
+  color: white;
+}
+
+.background h2 {
+  color: white;
+}
+
+.welcometext {
+  font-size: xx-large;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  line-height: 1px;
+}
+
+/* Buttons */
+.knapper {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.knapper a {
+  height: 100px;
+  width: 300px;
+  border-radius: 50px;
+  text-decoration: none;
+  background-color: #BC5704;
+  color: white;
+  font-size: xx-large;
+  border: none;
+  transition: #873f04;
+  z-index: 1;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.knapper :hover {
+  background-color: #873f04;
+  border-radius: 50px;
+}
+
+.knapper div {
+  margin: 70px;
+  background-size: cover;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.knapper img {
+  z-index: -1;
+  position: absolute;
+  height: 300px;
+  width: 500px;
+  border-radius: 50px;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.lenker {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 666px) and (max-width: 1012px) {
+
+.welcometext {
+  font-size: x-large;
+}
+  
+  /*Buttons*/
+.knapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+  padding-top: 50px;
+  padding-bottom: 0px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.knapper a {
+  height: 80px;
+  width: 230px;
+}
+
+.knapper img {
+  z-index: -1;
+  position: absolute;
+  height: 200px;
+  width: 330px;
+  border-radius: 50px;
+}
+
+.knapper div {
+  margin-bottom: 150px;
+}
+
+}
+
+@media (max-width: 666px) {
+
+.welcometext {
+  font-size: x-large;
+}
+  
+  /*Buttons*/
+.knapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 0px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.knapper a {
+  height: 80px;
+  width: 230px;
+}
+
+.knapper img {
+  z-index: -1;
+  position: absolute;
+  height: 200px;
+  width: 330px;
+  border-radius: 50px;
+}
+
+.knapper div {
+  margin-bottom: 150px;
+}
+
+
+
+}
